@@ -24,6 +24,8 @@
         "Deutsch": "Deutsch",
         "Documentation": "Documentación",
         "Download": "Descargar",
+        "Download Torrent": "Descargar Torrent",
+        "Download via torrent as part of the complete MiniOS 5.1 collection": "Descargar vía torrent como parte de la colección completa de MiniOS 5.1",
         "Easy to Use": "Fácil de usar",
         "Educational Platform": "Plataforma educativa",
         "English": "English",
@@ -33,7 +35,6 @@
         "Flux": "Flux",
         "Flux Advantages": "Ventajas de Flux",
         "Français": "Français",
-        "Get MiniOS Flux": "Obtener MiniOS Flux",
         "Home": "Inicio",
         "Ideal Use Cases": "Casos de uso ideales",
         "Italiano": "Italiano",
@@ -42,7 +43,6 @@
         "MiniOS": "MiniOS",
         "MiniOS Flux - Fast. Simple. Reliable.": "MiniOS Flux - Rápido. Simple. Confiable.",
         "MiniOS Flux is a portable Linux system that addresses the need for computing mobility, similar in concept to": "MiniOS Flux es un sistema Linux portátil que satisface la necesidad de movilidad informática, similar en concepto a",
-        "MiniOS Flux is currently available exclusively to Telegram users": "MiniOS Flux está actualmente disponible exclusivamente para usuarios de Telegram",
         "MiniOS Flux transforms any computer into your personal workstation in seconds. Whether it's your grandmother's old laptop, a friend's PC, or a public computer - simply plug in your USB drive and boot into your familiar desktop environment. No installation required, no traces left behind, works flawlessly on both vintage and modern hardware. Everything you do is automatically preserved forever: your documents, installed software, browser bookmarks, desktop wallpapers, even system tweaks. Released separately from the main MiniOS editions and available on Debian 10, 11, and 12 - perfect for breathing new life into legacy hardware with the ultra-efficient Fluxbox interface.": "MiniOS Flux transforma cualquier computadora en tu estación de trabajo personal en segundos. Ya sea la vieja laptop de tu abuela, la PC de un amigo o una computadora pública - simplemente conecta tu unidad USB e inicia en tu entorno de escritorio familiar. No se requiere instalación, no se dejan rastros, funciona perfectamente tanto en hardware antiguo como moderno. Todo lo que haces se preserva automáticamente para siempre: tus documentos, software instalado, marcadores del navegador, fondos de escritorio, incluso ajustes del sistema. Lanzado separadamente de las ediciones principales de MiniOS y disponible en Debian 10, 11 y 12 - perfecto para dar nueva vida a hardware antiguo con la ultra-eficiente interfaz Fluxbox.",
         "Minimalist Environment": "Entorno minimalista",
         "News": "Noticias",
@@ -64,5 +64,8 @@
         "and select the distribution yourself.": "y seleccione la distribución usted mismo.",
         "here": "aquí"
     },
-    "legacy": {}
+    "legacy": {
+        "Get MiniOS Flux": "Obtener MiniOS Flux",
+        "MiniOS Flux is currently available exclusively to Telegram users": "MiniOS Flux está actualmente disponible exclusivamente para usuarios de Telegram"
+    }
 }

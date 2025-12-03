@@ -24,6 +24,8 @@
         "Deutsch": "Deutsch",
         "Documentation": "Documentation",
         "Download": "Download",
+        "Download Torrent": "Download Torrent",
+        "Download via torrent as part of the complete MiniOS 5.1 collection": "Download via torrent as part of the complete MiniOS 5.1 collection",
         "Easy to Use": "Easy to Use",
         "Educational Platform": "Educational Platform",
         "English": "English",
@@ -33,7 +35,6 @@
         "Flux": "Flux",
         "Flux Advantages": "Flux Advantages",
         "Français": "Français",
-        "Get MiniOS Flux": "Get MiniOS Flux",
         "Home": "Home",
         "Ideal Use Cases": "Ideal Use Cases",
         "Italiano": "Italiano",
@@ -42,7 +43,6 @@
         "MiniOS": "MiniOS",
         "MiniOS Flux - Fast. Simple. Reliable.": "MiniOS Flux - Fast. Simple. Reliable.",
         "MiniOS Flux is a portable Linux system that addresses the need for computing mobility, similar in concept to": "MiniOS Flux is a portable Linux system that addresses the need for computing mobility, similar in concept to",
-        "MiniOS Flux is currently available exclusively to Telegram users": "MiniOS Flux is currently available exclusively to Telegram users",
         "MiniOS Flux transforms any computer into your personal workstation in seconds. Whether it's your grandmother's old laptop, a friend's PC, or a public computer - simply plug in your USB drive and boot into your familiar desktop environment. No installation required, no traces left behind, works flawlessly on both vintage and modern hardware. Everything you do is automatically preserved forever: your documents, installed software, browser bookmarks, desktop wallpapers, even system tweaks. Released separately from the main MiniOS editions and available on Debian 10, 11, and 12 - perfect for breathing new life into legacy hardware with the ultra-efficient Fluxbox interface.": "",
         "Minimalist Environment": "",
         "News": "News",
@@ -64,5 +64,8 @@
         "and select the distribution yourself.": "and select the distribution yourself.",
         "here": "here"
     },
-    "legacy": {}
+    "legacy": {
+        "Get MiniOS Flux": "Get MiniOS Flux",
+        "MiniOS Flux is currently available exclusively to Telegram users": "MiniOS Flux is currently available exclusively to Telegram users"
+    }
 }
