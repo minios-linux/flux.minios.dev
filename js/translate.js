@@ -45,6 +45,7 @@ let shortLanguage = userLanguage.substr(0, 2); // Use only the language code (e.
 // Determine the language file to use based on the user's language
 // First try the full language code (e.g., "en-US"), then fallback to short code (e.g., "en")
 let languageFile = `translations/${originalLanguage}.json`;
+let usedLanguage = originalLanguage;
 
 // Function to try loading translation file
 async function loadTranslations() {
@@ -54,6 +55,7 @@ async function loadTranslations() {
         if (!response.ok) {
             throw new Error('Full language file not found');
         }
+        usedLanguage = originalLanguage;
         return await response.json();
     } catch (error) {
         // If full language file not found, try short language code
@@ -64,6 +66,7 @@ async function loadTranslations() {
             if (!response.ok) {
                 throw new Error('Translation file not found');
             }
+            usedLanguage = shortLanguage;
             return await response.json();
         } else {
             throw error;
@@ -73,6 +76,12 @@ async function loadTranslations() {
 
 loadTranslations()
     .then((translations) => {
+        // Expose translations globally
+        window.translations = translations['translations'];
+        window.t = function(key) {
+            return (window.translations && window.translations[key]) ? window.translations[key] : key;
+        };
+
         // Select all elements with title, span, a, p, h1, h2, h3, h4, h5, h6, li, strong tags
         let elements = document.querySelectorAll(
             'title, span, a, p, h1, h2, h3, h4, h5, h6, li, strong'
@@ -122,14 +131,19 @@ loadTranslations()
             // Ensure the link points to another page and avoid duplicate "lang" parameters
             if (!href.includes('lang=')) {
                 let updatedHref = href.includes('?')
-                    ? `${href}&lang=${shortLanguage}`
-                    : `${href}?lang=${shortLanguage}`;
+                    ? `${href}&lang=${usedLanguage}`
+                    : `${href}?lang=${usedLanguage}`;
                 link.setAttribute('href', updatedHref);
             }
         });
+
+        // Dispatch event when translations are ready
+        window.dispatchEvent(new Event('translationsLoaded'));
 
     })
     // If the translation file is not found, log an error
     .catch((error) => {
         if (DEBUG_MODE) console.log('Translation not performed:', error);
+        // Define fallback t function even if translation fails
+        window.t = function(key) { return key; };
     });
