@@ -32,7 +32,7 @@
                     <li><a href="https://t.me/minios_chat" target="_blank"><i class="ri-discuss-fill"></i> Community</a></li>
                     <li><a href="https://minios.dev/docs" target="_blank"><i class="ri-book-open-fill"></i> Docs</a></li>
                     <li><a href="https://github.com/minios-linux/minios-live" target="_blank"><i class="ri-github-fill"></i> Source</a></li>
-                    
+
                     <!-- Language Selector -->
                     <li class="lang-selector-wrapper">
                         <div class="lang-selector">
@@ -200,7 +200,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 MiniOS Project. All rights reserved.</p>
+                    <p>&copy; 2026 MiniOS Project. All rights reserved.</p>
                     <div style="display: flex; gap: 20px;">
                         <a href="https://t.me/s/minios_news" target="_blank"><i class="ri-telegram-fill" style="font-size: 1.2rem;"></i></a>
                         <a href="https://github.com/minios-linux/minios-live" target="_blank"><i class="ri-github-fill" style="font-size: 1.2rem;"></i></a>
@@ -264,7 +264,7 @@
         function toggleLangMenu() {
             const selector = document.querySelector('.lang-selector');
             selector.classList.toggle('active');
-            
+
             // Focus search input if opening
             if (selector.classList.contains('active')) {
                 setTimeout(() => {
@@ -303,7 +303,7 @@
             const currentLang = params.get('lang') || navigator.language.substr(0, 2) || 'en';
             const langDisplay = document.getElementById('currentLang');
             if (langDisplay) langDisplay.textContent = currentLang.toUpperCase();
-            
+
             document.querySelectorAll('.lang-list a').forEach(link => {
                 if (link.dataset.lang === currentLang) {
                     link.classList.add('active');
